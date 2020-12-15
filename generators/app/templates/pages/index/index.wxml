@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="usermotto" wx:if="{{testVal}}">
+    <view class="user-motto" bindtap="callTestControllerTest">testVal val1：{{testVal.val1}}</view>
+    <view class="user-motto" bindtap="callTestControllerTest">testVal val2：{{testVal.val2}}</view>
+  </view>
+  <view class="usermotto" wx:else="{{!testVal}}">
+    <view class="user-motto" bindtap="callTestControllerTest">testVal val1：no data</view>
+  </view>
+  <view class="usermotto" wx:if="{{testVal1}}">
+    <view class="user-motto" bindtap="callTestControllerTest">testVal1 val1：{{testVal1.val1}}</view>
+    <view class="user-motto" bindtap="callTestControllerTest">testVal1 val2：{{testVal1.val2}}</view>
+  </view>
+  <view class="usermotto" wx:else="{{!testVal1}}">
+    <view class="user-motto" bindtap="callTestControllerTest">testVal1 val1：no data</view>
+  </view>
+  <view class="usermotto" wx:if="{{testVal2}}">
+    <view class="user-motto" bindtap="callTestControllerTest">testVal2 val1：{{testVal2.val1}}</view>
+    <view class="user-motto" bindtap="callTestControllerTest">testVal2 val2：{{testVal2.val2}}</view>
+  </view>
+  <view class="usermotto" wx:else="{{!testVal2}}">
+    <view class="user-motto" bindtap="callTestControllerTest">testVal2 val1：no data</view>
+  </view>
+  <view class="usermotto" wx:if="{{testVal3}}">
+    <view class="user-motto" bindtap="callTestControllerTest">testVal3 val1：{{testVal3.val1}}</view>
+    <view class="user-motto" bindtap="callTestControllerTest">testVal3 val2：{{testVal3.val2}}</view>
+  </view>
+  <view class="usermotto" wx:else="{{!testVal3}}">
+    <view class="user-motto" bindtap="callTestControllerTest">testVal3 val1：no data</view>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto" bindtap="callTestControllerTest">点我改变testVal2</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto" bindtap="testEvent3" data-val1="test testEvent3 value1" data-val2="test testEvent3 value2">点我改变testVal3</text>
+  </view>
+</view>

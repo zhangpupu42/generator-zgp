@@ -1,0 +1,16 @@
+{
+  "usingComponents": {},
+  "pages": [
+    "pages/index/index"
+  ],
+  "subpackages": [],
+  "tabBar": {},
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "<%= name %>",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
