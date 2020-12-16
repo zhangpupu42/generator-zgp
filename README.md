@@ -5,7 +5,7 @@
 ## Install
 
 ```
-$ npm install --global generator-node
+$ npm install --global generator-zgp
 ```
 
 
