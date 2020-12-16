@@ -4,13 +4,23 @@
     "ignore": [
       {
         "type": "file",
+        "value": "yarn.lock"
+      },
+      {
+        "type": "file",
         "value": "plopfile.js"
-      }, {
+      },
+      {
+        "type": "file",
+        "value": ".tmp.app.json"
+      },
+      {
         "type": "folder",
-        "value": "plop-templates"
-      }, {
+        "value": ".plop-templates"
+      },
+      {
         "type": "folder",
-        "value": "plopGenerators"
+        "value": ".plopGenerators"
       }
     ]
   },
@@ -51,8 +61,8 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.1",
-  "appid": "<%= appid %>",
-  "projectname": "<%= name %>",
+  "appid": "wx8c43c87f75a5448b",
+  "projectname": "miniprogram-1",
   "debugOptions": {
     "hidedInDevtools": []
   },

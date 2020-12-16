@@ -13,23 +13,23 @@ module.exports = plop => {
         actions: [
             {
                 type: 'add',
-                templateFile: 'plop-templates/components-template/template.js.hbs',
+                templateFile: 'plop-templates/.components-template/template.js.hbs',
                 path: 'components/{{name}}/{{name}}.js',
             },
             {
                 type: 'add',
-                templateFile: 'plop-templates/components-template/template.json.hbs',
+                templateFile: 'plop-templates/.components-template/template.json.hbs',
                 path: 'components/{{name}}/{{name}}.json',
             },
             {
                 type: 'add',
-                templateFile: 'plop-templates/components-template/template.wxml.hbs',
+                templateFile: 'plop-templates/.components-template/template.wxml.hbs',
                 path: 'components/{{name}}/{{name}}.wxml',
             },
             {
                 type: 'add',
-                templateFile: 'plop-templates/components-template/template.wxss.hbs',
-                path: 'components/{{name}}/{{name}}.wxss'
+                templateFile: 'plop-templates/.components-template/template.wxss.hbs',
+                path: 'components/{{name}}/{{name}}.wxss',
             }
         ]
     })

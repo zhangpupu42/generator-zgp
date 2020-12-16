@@ -71,8 +71,8 @@ let pageConfig = {
 const mapStateToData = (state) => {
   return {}
 }
-const mapDispatchToPage = (dispatch) => (
+const mapDispatchToPage = (dispatch) => {
   return {}
-})
+}
 const connectedPageConfig = connect(mapStateToData, mapDispatchToPage)(pageConfig)
 Page(connectedPageConfig)
